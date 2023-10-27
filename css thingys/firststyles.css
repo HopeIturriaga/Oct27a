@@ -1,0 +1,16 @@
+h1 {
+    color: mistyrose;
+    text-align: center;
+}
+
+header p {
+    color: plum;
+}
+
+header p span {
+    color:aliceblue
+}
+
+.color {
+    background-color: rgb(212, 235, 238);
+}

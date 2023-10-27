@@ -1,0 +1,422 @@
+html {
+    background-color: floralwhite;
+}
+
+body{
+    font-family:Tahoma, sans-serif;
+    font-size: 87%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container{
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    background: url(WATGBS.png) bottom repeat-x, rgb(255, 236, 213) url(WATGBS.png) top repeat-x;
+    background-size: 10%;
+    background-repeat: repeat-x;
+    padding-top: 16px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+/*Media Query*/
+@media screen and (max-width:480px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .container {
+        max-width: 1300px;
+    }
+}
+/*Media Query*/
+
+.box1 {
+    background-image: url(tiny.png);
+    background-position: center;
+    background-size: cover;
+}
+
+/* Form Styles */
+form {
+    background-color: floralwhite;
+    padding: 30px 40px;
+}
+
+.hidden-label{
+    position: absolute;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+input[type="email"], input[type="password"] {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    padding: 0 10px;
+    height: 40px;
+    font-family: Tahoma, sans-serif;
+    font-size: 100%;
+    margin-bottom: 20px;
+    border: 1px solid rgb(122, 99, 99);
+}
+input,select{
+    font-family: Tahoma, sans-serif;
+    font-size: 100%;
+}
+
+input {
+    font-family: Tahoma, sans-serif;
+    font-size: 100%;
+}
+
+input[type="email"]:focus, input[type="password"]:focus{
+    border: 1px rgb(122, 99, 99);
+}
+
+input[type="submit"] {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    background-color: rgb(255, 205, 205);
+    color: rosybrown;
+    padding: 10px 0;
+    border: 1px solid rgb(122, 99, 99);
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"]:hover
+input[type="submit"]:focus {
+    border: 1px solid rgb(122, 99, 99);
+    background-color: seashell;
+}
+
+/* End Form Styles*/
+
+/*Table Styles */
+table{
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+table th{
+    text-align: left;
+    background-color: seashell;
+    color: seashell;
+    text-shadow: 1px 1px seashell;
+}
+
+table th, table td{
+    border: 1px solid rgb(122, 99, 99);
+    padding: 10px;
+}
+
+table tbody tr:nth-child(even) td{
+    background-color:seashell ;
+}
+
+.col-fave {
+    width: 60%;
+}
+
+.col-P, .col-Q {
+    width: 20%;
+}
+/* End Table Styles*/
+
+header{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: rgb(122, 99, 99)
+}
+
+/*Typography*/
+header h1{
+    margin: 0;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 165%;
+    font-style: normal;
+    letter-spacing: 4px;
+}
+
+header p {
+    font-size: 100%;
+    margin-top: 10px;
+    text-align: justify;
+    color: rgb(122, 99, 99);
+}
+
+header p a {
+    text-decoration: none;
+}
+
+.p1 p {
+    margin-top: 10px;
+    text-indent: 25px;
+    color:rgb(255, 214, 163);
+}
+/*End of Typography*/
+
+.content-area {
+    border-top: 3px solid rgb(122, 99, 99);
+    border-bottom: 3px solid rgb(122, 99, 99);
+}
+
+/*Media Query*/
+@media screen and (max-width: 480px) {
+    .content-area {
+        padding-top: 20px;
+    }
+}
+/*Media Query*/
+
+.main{
+    width: 70%;
+    float: left;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+/* Diseappearing info-box */
+.info-box {
+    background-color: rgb(255, 205, 205);
+    border: 5px solid rgb(122, 99, 99);
+    padding: 20px, 40px, 7px, 40px;
+    margin-bottom: 1em;
+}
+
+@media screen and (max-width: 480px) {
+    .hide-small {
+        display: none;
+    }
+}
+/* End of diseappearing info-box */
+
+
+.support{
+    position:relative;
+    width: 30%;
+    float:left;
+    background-color: floralwhite;
+    background: linear-gradient(
+        to bottom,
+        floralwhite,
+        rgb(255, 205, 205)
+    );
+    padding-right: 40px;
+    padding-left: 40px;
+    box-sizing: border-box;
+    font-size: 85%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    z-index: 9;
+}
+
+.fix{
+    clear:both;
+}
+
+/*Media Query*/
+@media screen and (max-width:700px) {
+    .main,
+    .support {
+        width: auto;
+        float: none;
+    }
+
+    .main {
+        padding-right: 0;
+    }
+}
+/*Media Query*/
+
+p {
+    color:rosybrown;
+}
+
+footer p {
+    color: dodgerblue;
+    text-align: center;
+    font-size: 85%;
+    color:rgb(255, 214, 163);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h1{
+    color:rgb(97, 97, 144);
+    text-align: center;
+    font-size: 165%;
+    font-weight: normal;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header p{
+    color:rgb(255, 214, 163);
+}
+
+aside {
+    color:rgb(122, 99, 99);
+}
+
+header p span{
+    color:rgb(255, 205, 205);
+}
+
+.highlight {
+    color:rosybrown;
+    background-color:rgb(122, 99, 99);
+}
+
+.brand-color {
+    color:rosybrown;
+    background-color:rgb(122, 99, 99);
+}
+
+/* Site Navigation */
+.site-nav li {
+    list-style: none;
+    float: left;
+    margin-right: 10px;
+}
+
+.site-nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav {
+    margin-top: 20px;
+}
+.site-nav a {
+    text-decoration: none;
+    color:rgb(255, 205, 205);
+    padding: 10px 20px;
+    border: 3px solid rgb(122, 99, 99);
+    display: block;
+    border-bottom: none;
+}
+.site-nav a:hover {
+    background-color: seashell;
+}
+/* End of Site Navigation */
+
+@media screen and (max-width: 700px) {
+    .site-nav li {
+        width: 50%;
+        margin-right: 0px;
+    }
+
+    .site-nav a {
+        padding: 20px 0;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        text-align: center;
+        border: 3px solid rgb(122, 99, 99);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .site-nav li{
+        width: 70%;
+        margin-right: 0;
+    }
+    .site-nav a {
+        padding:20px 0;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        text-align: center;
+        border: 3px solid rgb(122, 99, 99);
+    }
+}
+
+/*Slideshow*/
+.image-banner {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+.image-banner img {
+    display: block;
+}
+
+.cycle-slideshow {
+    margin-bottom: 30px;
+    width: 100%;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+}
+.slide {
+    width: 70%;
+    position: relative;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+.slide-text {
+    position: absolute;
+    bottom: 10;
+    background-color: rgb(122, 99, 99);
+    color: black;
+    width: 100%;
+    padding: 20px;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+.slide-text h3 {
+    margin: 0;
+    color: rosybrown;
+}
+.slide-text p {
+    color: rosybrown;
+}
+/*End slideshow*/
+
+/*previous and next*/
+.cycle-prev, .cycle-next {
+    position: absolute;
+    width: 20%;
+    top: 30%;
+    background-color: rgb(122, 99, 99);
+    color: #FFF;
+    padding: 1px 10px;
+    display: block;
+    cursor: pointer;
+    font-size: 130%;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity .5s;
+}
+.cycle-next {
+    right: 153px;
+}
+
+.cycle-slideshow:hover .cycle-prev,
+.cycle-slideshow:hover .cycle-next {
+    opacity: 1;
+}
+/*previous and next*/
+
+.video {
+    max-width: 25px;
+    margin-right: px;
+}
